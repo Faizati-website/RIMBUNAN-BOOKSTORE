@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🛒 Your Cart – Rimbunan Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .cart-page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .cart-page h2 {
+      text-align: center;
+      color: #5a3d4a;
+      margin-bottom: 30px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f0d6e0;
+      font-size: 16px;
+    }
+    .total {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 20px;
+    }
+    .empty {
+      text-align: center;
+      color: #999;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RIMBUNAN Bookstore</h1>
+  <button class="cart-btn" onclick="window.location.href='cart.html'">
+    🛒 Cart (<span id="cart-count">0</span>)
+  </button>
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  
+  <div class="dropdown">
+    <a href="products.html" class="dropbtn">Products</a>
+    <div class="dropdown-content">
+      <a href="#new-release">New Release</a>
+      <a href="#best-seller">Best Seller</a>
+      <a href="#english-romance">English Romance</a>
+      <a href="#malay-novels">Malay Novels</a>
+      <a href="#childrens-books">Children's Books</a>
+      <a href="#coming-soon">Coming Soon</a>
+    </div>
+  </div>
+  
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count-nav">0</span>)</a>
+</nav>
+
+<main>
+
+  <div class="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items">
+      <p class="empty">Your cart is empty.</p>
+    </div>
+    <div class="total">Total: RM <span id="total-price">0.00</span></div>
+    <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+  </div>
+
+  <section id="checkout">
+  <h2>Checkout Summary</h2>
+  <div class="receipt-box">
+    <p><strong>Items:</strong> <span id="receipt-count">0</span></p>
+    <p><strong>Total Price:</strong> RM <span id="receipt-total">0.00</span></p>
+    <p><strong>Status:</strong> Ready to checkout</p>
+    <button onclick="proceedCheckout()">Proceed to Checkout</button>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>────୨ৎ────</p>
+  <a href="https://www.instagram.com/rimbunan._bookstore._?utm_source=ig_web_button_share_sheet&igsh=MWt5eDZ2aXAzOWVpYQ==" target="_blank" class="instagram-btn">
+    <i class="fa fa-instagram"></i> Instagram
+  </a>
+  <p>&copy; 2025 Rimbunan Bookstore. All rights reserved.</p>
+  <p><strong>Disclaimer:</strong><br>
+    This website is created solely for academic purposes as part of a university project. All books, products, and content displayed here are for demonstration only and are not available for actual sale. Images and materials used belong to their respective copyright holders and are used for educational, non-commercial use only.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

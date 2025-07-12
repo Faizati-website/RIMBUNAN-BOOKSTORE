@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📚 Rimbunan Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<header>
+  <h1>RIMBUNAN Bookstore</h1>
+  <button class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  
+  <div class="dropdown">
+    <a href="products.html" class="dropbtn">Products</a>
+    <div class="dropdown-content">
+      <a href="#new-release">New Release</a>
+      <a href="#best-seller">Best Seller</a>
+      <a href="#english-romance">English Romance</a>
+      <a href="#malay-novels">Malay Novels</a>
+      <a href="#childrens-books">Children's Books</a>
+      <a href="#coming-soon">Coming Soon</a>
+    </div>
+  </div>
+  
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count-nav">0</span>)</a>
+</nav>
+
+<section class="hero">
+  <h1>Welcome to Rimbunan Bookstore</h1>
+  <p>Find your next great read with us!</p>
+  <a href="products.html" class="shop-now-btn">Shop Now</a>
+  <p>Press me for a surprise!!</p>
+  <button onclick="myFunction()">CLICK NOW!!!!</button>
+</section>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="Photos/carousel_image_1.PNG" alt="Slide 1" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Photos/carousel_image_2.PNG" alt="Slide 2" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Photos/carousel_image_3.PNG" alt="Slide 3" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="carousel-dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="card">
+  <h3 style="text-align: center;">Order with us now <i>!</i></h3>
+  <video controls loop class="local-video">
+    <source src="Video/packing_video.opdownload" type="video/mp4">
+  </video>
+</div>
+
+<section class="testimonials">
+  <h2 class="glow-text">What Our Customers Say</h2>
+  <div class="testimonials-container">
+    <blockquote>“Amazing bookstore! Fast delivery and great service.” — Sarah K.</blockquote>
+    <blockquote>“I found rare books I couldn’t find anywhere else.” — Afiqah N.</blockquote>
+    <blockquote>“Great variety of books across genres and less homogenus.” — Pacifica A.</blockquote>
+  </div>
+</section>
+
+<main>
+  <section class="cart" id="cart-section" style="display: none;">
+    <h2>Cart Summary</h2>
+    <div id="cart-items"></div>
+    <h3>Total: RM <span id="total-price">0</span></h3>
+  </section>
+</main>
+
+<footer>
+  <p>────୨ৎ────</p>
+  <a href="https://www.instagram.com/rimbunan._bookstore._?utm_source=ig_web_button_share_sheet&igsh=MWt5eDZ2aXAzOWVpYQ==" target="_blank" class="instagram-btn">
+    <i class="fa fa-instagram"></i> Instagram
+  </a>
+  <p>&copy; 2025 Rimbunan Bookstore. All rights reserved.</p>
+  <p><strong>Disclaimer:</strong><br>
+    This website is created solely for academic purposes as part of a university project. All books, products, and content displayed here are for demonstration only and are not available for actual sale. Images and materials used belong to their respective copyright holders and are used for educational, non-commercial use only.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

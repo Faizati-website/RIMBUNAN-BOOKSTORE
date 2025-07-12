@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📚 Rimbunan Bookstore – Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- ===== Header & Nav ===== -->
+<header>
+  <h1>RIMBUNAN Bookstore</h1>
+  <a href="cart.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+</header>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  
+  <div class="dropdown">
+    <a href="products.html" class="dropbtn">Products</a>
+    <div class="dropdown-content">
+      <a href="#new-release">New Release</a>
+      <a href="#best-seller">Best Seller</a>
+      <a href="#english-romance">English Romance</a>
+      <a href="#malay-novels">Malay Novels</a>
+      <a href="#childrens-books">Children's Books</a>
+      <a href="#coming-soon">Coming Soon</a>
+    </div>
+  </div>
+  
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart (<span id="cart-count-nav">0</span>)</a>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <h1>Discover Our Collection</h1>
+  <p>Curated reads for every passion</p>
+</section>
+
+<main>
+
+<!-- ════ Category 1: New Release ════ -->
+<section id="new-release">
+  <h2 class="section-title">New Release</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('new-release', -1)">❮</button>
+    <div class="carousel-container" id="carousel-new-release">
+      <div class="product">
+        <img src="images/nr1.webp" alt="Guru Bangsa Usahawan">
+        <h3>Guru Bangsa Usahawan</h3><p>AB Hamid, Dato Roslan</p><p>RM 79.00</p>
+        <button class="add-btn" onclick="addToCart('Guru Bangsa Usahawan',79.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr2.webp" alt="Pengembaraan Hamka di Malaysia">
+        <h3>Pengembaraan Hamka di Malaysia</h3><p>Hamka, Abdul Hamid</p><p>RM 39.00</p>
+        <button class="add-btn" onclick="addToCart('Pengembaraan Hamka di Malaysia', 39.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr3.webp" alt="Atmosphere: A Love Story">
+        <h3>Atmosphere: A Love Story</h3><p>Reid, Taylor Jenskin</p><p>RM 39.00</p>
+        <button class="add-btn" onclick="addToCart('Atmosphere: A Love Story', 39.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr4.webp" alt="Puaka 13">
+        <h3>Puaka 13</h3><p>Puaka Bersekutu</p><p>RM 22.00</p>
+        <button class="add-btn" onclick="addToCart('Puaka 13', 22.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr5.webp" alt="Peristiwa Hijrah Rasulullah SAW">
+        <h3>Peristiwa Hijrah Rasulullah SAW</h3><p>Panel Must Read</p><p>RM 25.00</p>
+        <button class="add-btn" onclick="addToCart('Peristiwa Hijrah Rasulullah SAW', 25.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr6.webp" alt="Problematic Summer Romance">
+        <h3>Problematic Summer Romance</h3><p>Hazelwood, Ali</p><p>RM 59.00</p>
+        <button class="add-btn" onclick="addToCart('Problematic Summer Romance', 59.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr7.webp" alt="In Praise of Good Bookstores">
+        <h3>In Praise of Good Bookstores</h3><p>Deutsch, Jeff</p><p>RM 69.00</p>
+        <button class="add-btn" onclick="addToCart('In Praise of Good Bookstores', 69.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr8.webp" alt="The First Gentleman">
+        <h3>The First Gentleman</h3><p>Clinton, Bill</p><p>RM 99.00</p>
+        <button class="add-btn" onclick="addToCart('The First Gentleman', 99.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr9.webp" alt="Memoir Seorang Guru">
+        <h3>Memoir Seorang Guru</h3><p>Haji Abdullah, Azizi</p><p>RM 45.00</p>
+        <button class="add-btn" onclick="addToCart('Memori Seorang Guru', 45.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/nr10.webp" alt="Mencari Ramlee">
+        <h3>Mencari Ramlee</h3><p>Bahaudin, Raiha</p><p>RM 35.00</p>
+        <button class="add-btn" onclick="addToCart('Mencari Ramlee', 35.00)">Add to Cart</button>
+      </div>
+      
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('new-release', 1)">❯</button>
+  </div>
+</section>
+
+<!-- ════ Category 2: Best Seller ════ -->
+<section id="best-seller">
+  <h2 class="section-title">Best Seller</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('best-seller', -1)">❮</button>
+    <div class="carousel-container" id="carousel-best-seller">
+      <div class="product">
+        <img src="images/bs1.webp" alt="Thariq Ridzuwan Commando's: His Treasure">
+        <h3>Thariq Ridzuwan Commando's: His Treasure</h3><p>Hudanajwa</p><p>RM 35.00</p>
+        <button class="add-btn" onclick="addToCart('Thariq Ridzuwan Commando: His Treasure',35.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs2.webp" alt="Dog Man 12: The Scarlet Shedder">
+        <h3>Dog Man 12: The Scarlet Shedder</h3><p>Pilkey, Dav</p><p>RM 34.90</p>
+        <button class="add-btn" onclick="addToCart('Dog Man 12: The Scarlet Shedder',34.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs3.webp" alt="Shattered Hopes">
+        <h3>Shattered Hopes</h3><p>Bose, Romen</p><p>RM 79.00</p>
+        <button class="add-btn" onclick="addToCart('Shattered Hopes',79.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs4.webp" alt="The Siege Within">
+        <h3>The Siege Within</h3><p>Lopez, Leslie</p><p>RM 69.95</p>
+        <button class="add-btn" onclick="addToCart('The Siege Within',69.95)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs5.webp" alt="How Was Your Day">
+        <h3>How Was Your Day</h3><p>Cheeming Boey</p><p>RM 39.90</p>
+        <button class="add-btn" onclick="addToCart('How Was Your Day',39.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs6.webp" alt="Second Takeoff: Strategies for Malaysia's Economic Resurgence">
+        <h3>Second Takeoff: Strategies for Malaysia's Economic Resurgence</h3><p>Liew Chin Tong</p><p>RM 69.90</p>
+        <button class="add-btn" onclick="addToCart('Second Takeoff: Strategies for Malaysias Economic Resurgence',69.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs7.webp" alt="Living the Asian Century">
+        <h3>Living the Asian Century</h3><p>Mahbubani, Kishore</p><p>RM 114.00</p>
+        <button class="add-btn" onclick="addToCart('Living the Asian Century',114.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs8.webp" alt="Befriending the Quran: A Beginner’s Guide for Nurturing Closeness to the Quran">
+        <h3>Befriending the Quran: A Beginner’s Guide for Nurturing Closeness to the Quran</h3><p>Ayesha Syahira</p><p>RM 30.00</p>
+        <button class="add-btn" onclick="addToCart('Befriending the Quran: A Beginner’s Guide for Nurturing Closeness to the Quran',30.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs9.webp" alt="Harmony Heights">
+        <h3>Harmony Heights</h3><p>Ong Chin Huat</p><p>RM 72.00</p>
+        <button class="add-btn" onclick="addToCart('Harmony Heights',72.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/bs10.webp" alt="Revenge in Violent Hues">
+        <h3>Revenge in Violent Hues</h3><p>Nadiah Zakaria</p><p>RM 39.00</p>
+        <button class="add-btn" onclick="addToCart('Revenge in Violent Hues',39.00)">Add to Cart</button>
+      </div>
+
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('best-seller', 1)">❯</button>
+  </div>
+</section>
+
+<!-- ════ Category 3: English Romance ════ -->
+<section id="english-romance">
+  <h2 class="section-title">English Romance</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('english-romance', -1)">❮</button>
+    <div class="carousel-container" id="carousel-english-romance">
+      <div class="product">
+        <img src="images/er1.webp" alt="Check & Mate">
+        <h3>Check & Mate</h3><p>Ali Hazelwood</p><p>RM 59.95</p>
+        <button class="add-btn" onclick="addToCart('Check & Mate',59.95)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er2.webp" alt="If Only I Had Told Her">
+        <h3>If Only I Had Told Her</h3><p>Nowlin, Laura</p><p>RM 59.00</p>
+        <button class="add-btn" onclick="addToCart('If Only I Had Told Her',59.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er3.webp" alt="Dungeons and Drama">
+        <h3>Dungeons and Drama</h3><p>Boyce, Kristy</p><p>RM 64.95</p>
+        <button class="add-btn" onclick="addToCart('Dungeons and Drama',64.95)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er4.webp" alt="Arya Khanna's Bollywood Moment">
+        <h3>Arya Khanna's Bollywood Moment</h3><p>Avachat, Arushi</p><p>RM 75.90</p>
+        <button class="add-btn" onclick="addToCart('Arya Khannas Bollywood Moment',75.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er5.webp" alt="The Getaway List">
+        <h3>The Getaway List</h3><p>Lord, Emma</p><p>RM 72.50</p>
+        <button class="add-btn" onclick="addToCart('The Getaway List',72.50)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er6.webp" alt="The Do-Over">
+        <h3>The Do-Over</h3><p>Painter, Lynn</p><p>RM 72.50</p>
+        <button class="add-btn" onclick="addToCart('The Do-Over',72.50)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er7.webp" alt="Love From Mecca To Medina">
+        <h3>Love From Mecca To Medina</h3><p>Ali, S.K.</p><p>RM 65.90</p>
+        <button class="add-btn" onclick="addToCart('Love From Mecca To Medina',65.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er8.webp" alt="I Hope This Doesn't Find You">
+        <h3>I Hope This Doesn't Find You</h3><p>Liang, Ann</p><p>RM 65.90</p>
+        <button class="add-btn" onclick="addToCart('I Hope This Doesnt Find You',65.90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er9.webp" alt="With a Little Luck">
+        <h3>With a Little Luck</h3><p>Meyer, Marissa</p><p>RM 58.50</p>
+        <button class="add-btn" onclick="addToCart('With a Little Luck',58.50)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/er10.webp" alt="Didn't See That Coming">
+        <h3>Didn't See That Coming</h3><p>Sutanto, Jesse Q.</p><p>RM 57.50</p>
+        <button class="add-btn" onclick="addToCart('Didnt See That Coming',57.50)">Add to Cart</button>
+      </div>
+
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('english-romance', 1)">❯</button>
+  </div>
+</section>
+
+<!-- ════ Category 4: Malay Novels ════ -->
+<section id="malay-novels">
+  <h2 class="section-title">Malay Novels</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('malay-novels', -1)">❮</button>
+    <div class="carousel-container" id="carousel-malay-novels">
+      <div class="product">
+        <img src="images/mn1.webp" alt="Ammar Zahrain: The Obsessive Husband">
+        <h3>Ammar Zahrain: The Obsessive Husband</h3><p> Nssignature</p><p>RM 31.00</p>
+        <button class="add-btn" onclick="addToCart('Ammar Zahrain: The Obsessive Husband',31.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn2.webp" alt="Bayang Sofea">
+        <h3>Bayang Sofea</h3><p>Teme Abdullah</p><p>RM 34.00</p>
+        <button class="add-btn" onclick="addToCart('Bayang Sofea',34.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn3.webp" alt="Matahari Pun Terluka">
+        <h3>Matahari Pun Terluka</h3><p>Ainulfarihah</p><p>RM 22.00</p>
+        <button class="add-btn" onclick="addToCart('Matahari Pun Terluka',45.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn4.webp" alt="Inara His Eternal Love">
+        <h3>Inara His Eternal Love</h3><p>Irenicmia</p><p>RM 33.00</p>
+        <button class="add-btn" onclick="addToCart('Inara His Eternal Love',33.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn5.webp" alt="Rahsia Danny">
+        <h3>Rahsia Danny</h3><p>Teme Abdullah</p><p>RM 35.00</p>
+        <button class="add-btn" onclick="addToCart('Rahsia Danny',35.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn6.webp" alt="Chef's Cuisine">
+        <h3>Chef's Cuisine</h3><p>Effalee</p><p>RM 40.00</p>
+        <button class="add-btn" onclick="addToCart('Chefs Cuisine',40.00,)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn7.webp" alt="His Code Name: Alpha">
+        <h3>His Code Name: Alpha</h3><p>Elyshakaman</p><p>RM 32.00</p>
+        <button class="add-btn" onclick="addToCart('His Code Name: Alpha',32.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn8.webp" alt="Yes! Captain Zul Aaryan">
+        <h3>Yes! Captain Zul Aaryan</h3><p>Wnfhanna</p><p>RM 35.00</p>
+        <button class="add-btn" onclick="addToCart('Yes! Captain Zul Aaryan',35.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn9.webp" alt="Mr. Headhunter">
+        <h3>Mr. Headhunter</h3><p>ARIASEVA</p><p>RM 38.00</p>
+        <button class="add-btn" onclick="addToCart('Mr. Headhunter',38.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/mn10.webp" alt="Hero Untuk Jiyan ">
+        <h3>Hero Untuk Jiyan </h3><p>Yumi Hyra</p><p>RM 35.00</p>
+        <button class="add-btn" onclick="addToCart('Hero Untuk Jiyan ',35.00)">Add to Cart</button>
+      </div>
+
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('malay-novels', 1)">❯</button>
+  </div>
+</section>
+
+
+<!-- ════ Category 5: Children's Books ════ -->
+<section id="childrens-books">
+  <h2 class="section-title">Children's Books</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('childrens-books', -1)">❮</button>
+    <div class="carousel-container" id="carousel-childrens-books">
+      <div class="product">
+        <img src="images/kb1.webp" alt="Children'S Illustrated Animal Atlas">
+        <h3>Children'S Illustrated Animal Atlas</h3><p>DK Children</p><p>RM 75.00</p>
+        <button class="add-btn" onclick="addToCart('ChildrenS Illustrated Animal Atlas',75.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb2.webp" alt="100 People Who Made History">
+        <h3>100 People Who Made History</h3><p>Ben Gillilland</p><p>RM 103.50</p>
+        <button class="add-btn" onclick="addToCart('100 People Who Made History',103.50)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb3.webp" alt="Knowledge Encyclopedia Science!">
+        <h3>Knowledge Encyclopedia Science!</h3><p>DK Children</p><p>RM 129.00</p>
+        <button class="add-btn" onclick="addToCart('Knowledge Encyclopedia Science!',129.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb4.webp" alt="Elmo's Big Lift And Look Book">
+        <h3>Elmo's Big Lift And Look Book</h3><p> Ross, Anna; Mathieu, Joe (ILT)</p><p>RM 39.00</p>
+        <button class="add-btn" onclick="addToCart('Elmos Big Lift And Look Book',39.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb5.webp" alt="Key Words 2023 (Peter and Jane) 1a: Peter and Jane">
+        <h3>Key Words 2023 (Peter and Jane) 1a: Peter and Jane</h3><p>Ladybird</p><p>RM 12.00</p>
+        <button class="add-btn" onclick="addToCart('Key Words 2023 (Peter and Jane) 1a: Peter and Jane',12.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb6.webp" alt="Be More Stitch: Be More Positive, Happy, and Confident Every Day">
+        <h3>Be More Stitch: Be More Positive, Happy, and Confident Every Day</h3><p>DK Children</p><p>RM 55.00</p>
+        <button class="add-btn" onclick="addToCart('Be More Stitch: Be More Positive, Happy, and Confident Every Day',55.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb7.webp" alt="The Wrong Shoes">
+        <h3>The Wrong Shoes</h3><p>Percival, Tom</p><p>RM 59.00</p>
+        <button class="add-btn" onclick="addToCart('The Wrong Shoes',59.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb8.webp" alt="Peppa Pig: Where's Peppa at the Zoo? A Search and Find Book">
+        <h3>Peppa Pig: Where's Peppa at the Zoo? A Search and Find Book</h3><p>Ladybird</p><p>RM 52.00</p>
+        <button class="add-btn" onclick="addToCart('Peppa Pig: Wheres Peppa at the Zoo? A Search and Find Book',52.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb9.webp" alt="My Busy Book: ABC">
+        <h3>My Busy Book: ABC</h3><p>Ladybird</p><p>RM 29.00</p>
+        <button class="add-btn" onclick="addToCart('My Busy Book: ABC',29.00)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/kb10.webp" alt="Billy and the Minpins (Colour Edition)">
+        <h3>Billy and the Minpins (Colour Edition)</h3><p> Dahl, Roald / Blake, Quentin (illust.)</p><p>RM 82.00</p>
+        <button class="add-btn" onclick="addToCart('Billy and the Minpins (Colour Edition)',82.00)">Add to Cart</button>
+      </div>
+
+      </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('childrens-books', 1)">❯</button>
+  </div>
+</section>
+
+<!-- ════ Category 6: Coming Soon ════ -->
+<section id="coming-soon">
+  <h2 class="section-title">Coming Soon</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel('coming-soon', -1)">❮</button>
+    <div class="carousel-container" id="carousel-coming-soon">
+      <div class="product">
+        <img src="images/cs1.webp" alt="Rethinking Ourselves Justice, Reform, and Ignorance in Postnormal Times">
+        <h3>Rethinking Ourselves Justice, Reform, and Ignorance in Postnormal Times</h3><p>Ibrahim, Anwar</p><p>RM 89.95</p>
+        <button class="add-btn" onclick="addToCart('Rethinking Ourselves Justice, Reform, and Ignorance in Postnormal Times',89.95)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs2.webp" alt=" Countdown to Riches">
+        <h3> Countdown to Riches</h3><p>Byrne, Rhonda</p><p>RM 109.95</p>
+        <button class="add-btn" onclick="addToCart('Countdown to Riches,109.95)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs3.webp" alt=" The Bookshop Woman">
+        <h3> The Bookshop Woman</h3><p> Hanada, Nanako; Anderson, Cat (TRN)</p><p>RM 59.90</p>
+        <button class="add-btn" onclick=",addToCart('The Bookshop Woman',59.90)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs4.webp" alt="Pocket Potters: Harry Potter">
+        <h3>Pocket Potters: Harry Potter</h3><p> Rowling, J.K. / Smillie, Natalie (illust.)</p><p>RM 69.90</p>
+        <button class="add-btn" onclick="addToCart('Pocket Potters: Harry Potter',69.90)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs5.webp" alt=" Pocket Potters: Hermione Granger">
+        <h3> Pocket Potters: Hermione Granger</h3><p>Rowling, J.K. / Proietti, Laura (illust.)</p><p>RM 69.90</p>
+        <button class="add-btn" onclick="addToCart(' Pocket Potters: Hermione Granger',69.90)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs6.webp" alt="Pocket Potters: Ron Weasley ">
+        <h3>Pocket Potters: Ron Weasley </h3><p> Rowling, J.K. / Muza, Olia (illust.)</p><p>RM 69.90</p>
+        <button class="add-btn" onclick="addToCart('Pocket Potters: Ron Weasley ',69.90)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs7.webp" alt=" The Secret of Secrets">
+        <h3> The Secret of Secrets</h3><p>Brown, Dan</p><p>RM 149.95</p>
+        <button class="add-btn" onclick="addToCart('The Secret of Secrets',149.95)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs8.webp" alt="The City and Its Uncertain Walls">
+        <h3>The City and Its Uncertain Walls</h3><p> Murakami, Haruki / Gabriel, Philip (tr.)</p><p>RM 69.95</p>
+        <button class="add-btn" onclick="addToCart('The City and Its Uncertain Walls',69.95)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs9.webp" alt="The House Saphir">
+        <h3>The House Saphir</h3><p>Meyer, Marissa</p><p>RM 72.50</p>
+        <button class="add-btn" onclick="addToCart('The House Saphir',72.50)">Pre‑order</button>
+      </div>
+
+      <div class="product">
+        <img src="images/cs10.webp" alt="The Penelopiad (20th Special Anniversary Edition) ">
+        <h3>The Penelopiad (20th Special Anniversary Edition) </h3><p>Atwood, Margaret</p><p>RM 159.90</p>
+        <button class="add-btn" onclick="addToCart('The Penelopiad (20th Special Anniversary Edition) ',159.90)">Pre‑order</button>
+      </div>
+
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel('coming-soon', 1)">❯</button>
+  </div>
+</section>
+
+<!-- Optional pop‑up panel (can delete if using full cart page only) -->
+<section class="cart" id="cart-section" style="display:none">
+  <h2>Cart Summary</h2>
+  <div id="cart-items"></div>
+  <h3>Total: RM <span id="total-price">0.00</span></h3>
+</section>
+
+</main>
+
+<footer>
+  <p>────୨ৎ────</p>
+  <a href="https://www.instagram.com/rimbunan._bookstore._?utm_source=ig_web_button_share_sheet&igsh=MWt5eDZ2aXAzOWVpYQ==" target="_blank" class="instagram-btn">
+    <i class="fa fa-instagram"></i> Instagram
+  </a>
+  <p>&copy; 2025 Rimbunan Bookstore. All rights reserved.</p>
+  <p><strong>Disclaimer:</strong><br>
+    This website is created solely for academic purposes as part of a university project. All books, products, and content displayed here are for demonstration only and are not available for actual sale. Images and materials used belong to their respective copyright holders and are used for educational, non-commercial use only.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
